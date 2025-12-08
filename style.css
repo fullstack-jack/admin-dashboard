@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template:
+        "nav header" auto 
+        "nav main" 1fr
+        / 15% 85%; 
+    min-height: 100vh;;
+}
+
+aside {
+    background-color: rgb(1, 164, 214);
+    grid-area: nav;
+}
+
+header {
+    background-color:rgb(255, 255, 255);
+    grid-area: header;
+}
+
+main {
+    background-color:rgb(230, 230, 230);
+    grid-area: main;
+}
